@@ -716,9 +716,9 @@ class AttLayer(nn.Module):
         return mixed_embeddings
 
 
-class SHaRe_MHCN_Encoder(nn.Module):
+class THRGB_MHCN_Encoder(nn.Module):
     def __init__(self, data, emb_size, n_layers, S, conf):
-        super(SHaRe_MHCN_Encoder, self).__init__()
+        super(THRGB_MHCN_Encoder, self).__init__()
         self.data = data
         self.S = S
         self.A_mat, self.num_user, self.num_item = self.parse_dataset(self.data, S)
